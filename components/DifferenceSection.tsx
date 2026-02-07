@@ -4,17 +4,17 @@ import { TrophyIcon, UserIcon, DiamondIcon, GearsIcon } from './Icon';
 
 const DifferenceSection: React.FC = () => {
   return (
-    <SectionWrapper title="Designing Your Difference.">
+    <SectionWrapper title="Designing Your Difference." id="compatibility">
       <div className="max-w-4xl mx-auto space-y-12">
         <p className="text-lg text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
-          Stage 1 (Build) is only effective if your message converts. We engineer your profile to turn searchers into long-term clients.
+          Stage 1 (Build) only works if your message converts. We shape your profile around the work you actually want, so the right customers choose you.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-8">
           <MiniCard 
             icon={<TrophyIcon className="w-5 h-5" />}
             title="The 90-Day North Star"
-            text="Our goal is a 30% increase in qualified calls within the first 90 days of the 'Run' stage."
+            text="Our goal is a 30% increase in qualified calls within the first 90 days."
             isHighlighted={true}
           />
           <MiniCard 
@@ -24,19 +24,19 @@ const DifferenceSection: React.FC = () => {
           />
           <MiniCard 
             icon={<DiamondIcon className="w-5 h-5" />}
-            title="USP Engineering"
-            text="Documenting exactly why a customer should choose you over the 100 other options nearby."
+            title="Differentiation"
+            text="We'll make it obvious why a customer should choose you over the other options nearby."
           />
           <MiniCard 
             icon={<GearsIcon className="w-5 h-5" />}
             title="Evidence Systems"
-            text="Implementing the workflows for constant job-site proof and automated review flow."
+            text="We implement workflows for constant job-site proof and a reliable review engine."
           />
         </div>
 
         <div className="bg-mtg-blue text-white p-8 rounded-2xl text-center shadow-lg transform hover:-translate-y-1 transition-transform">
             <p className="text-xl italic leading-relaxed">
-                Outcome: A documented <strong className="text-mtg-orange">unique selling proposition (USP)</strong> ready for your profile activation.
+                A documented <strong className="text-mtg-orange">unique selling proposition</strong> - ready for activation.
             </p>
         </div>
       </div>

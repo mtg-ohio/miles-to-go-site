@@ -6,6 +6,10 @@ const RoadmapSection: React.FC = () => {
   return (
     <SectionWrapper title="The System Lifecycle.">
       <div className="max-w-4xl mx-auto relative">
+        <p className="text-base md:text-lg text-slate-600 mb-14 -mt-6 font-medium leading-relaxed">
+          A controlled path from visibility to dominance.
+        </p>
+        
         {/* Progress Line */}
         <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gray-100 -translate-x-1/2 z-0"></div>
 
@@ -21,7 +25,7 @@ const RoadmapSection: React.FC = () => {
                 icon={<FoundationIcon className="w-6 h-6" />}
                 number="01"
                 title="Compliance Audit"
-                action="Technical correction and error elimination."
+                action="Fixing the ranking, trust, and data issues that keep customers from finding you."
                 deliverable="100% Verified Profile"
                 alignment="left"
               />
@@ -29,7 +33,7 @@ const RoadmapSection: React.FC = () => {
                 icon={<RocketIcon className="w-6 h-6" />}
                 number="02"
                 title="Content Activation"
-                action="Geo-tagged assets and keyword-rich data."
+                action="Deploying geo-aligned assets and structured content designed for discovery."
                 deliverable="Active Ranking Growth"
                 alignment="right"
               />
@@ -38,6 +42,7 @@ const RoadmapSection: React.FC = () => {
 
           {/* STAGE 2 GROUP */}
           <div className="relative pt-8">
+          <div className="absolute -left-4 top-0 bottom-0 w-1 bg-mtg-orange/10 md:hidden"></div>
             <div className="mb-8 flex items-center justify-center">
               <span className="bg-mtg-orange text-white px-4 py-1 rounded text-[10px] font-black uppercase tracking-widest">Stage 2: Run</span>
             </div>
@@ -45,7 +50,7 @@ const RoadmapSection: React.FC = () => {
               icon={<AutomationIcon className="w-6 h-6" />}
               number="03"
               title="Performance Management"
-              action="Review workflows and structured content engine."
+              action="Continuous optimization through reviews, signals, and a managed content engine."
               deliverable="The 90-Day Growth Engine"
               alignment="left"
             />
@@ -57,8 +62,8 @@ const RoadmapSection: React.FC = () => {
               The 30% Growth Benchmark
             </div>
             <div className="mt-4 text-center">
-              <h4 className="text-2xl font-black text-mtg-blue">Qualified Call Volume Peak</h4>
-              <p className="text-gray-500 text-sm italic">Prerequisite for Stage 3: Scale</p>
+              <h4 className="text-2xl font-black text-mtg-blue">Sustained Qualified Call Growth</h4>
+              <p className="mt-4 text-base font-medium text-slate-700">Only then does scaling make sense.</p>
             </div>
           </div>
         </div>
@@ -83,9 +88,9 @@ const PathStep: React.FC<PathStepProps> = ({ number, title, action, deliverable,
       <div className="flex-1 text-center md:text-left hidden md:block">
         {!isLeft && (
           <div className="pl-12">
-            <h4 className="font-bold text-mtg-blue text-xl">{title}</h4>
-            <p className="text-gray-600 text-sm mt-1">{action}</p>
-            <p className="text-mtg-orange font-bold text-[10px] mt-2 uppercase tracking-tight">Deliverable: {deliverable}</p>
+            <h4 className="font-bold text-mtg-blue text-lg">{title}</h4>
+            <p className="text-slate-600 text-sm mt-1 leading-relaxed">{action}</p>
+            <p className="text-mtg-orange font-bold text-[11px] mt-2 uppercase tracking-wider">Deliverable: {deliverable}</p>
           </div>
         )}
       </div>
@@ -99,15 +104,15 @@ const PathStep: React.FC<PathStepProps> = ({ number, title, action, deliverable,
       <div className="flex-1 text-center md:text-left">
         {isLeft ? (
           <div className="md:pr-12 md:text-right">
-            <h4 className="font-bold text-mtg-blue text-xl">{title}</h4>
-            <p className="text-gray-600 text-sm mt-1">{action}</p>
-            <p className="text-mtg-orange font-bold text-[10px] mt-2 uppercase tracking-tight">Deliverable: {deliverable}</p>
+            <h4 className="font-bold text-mtg-blue text-lg">{title}</h4>
+            <p className="text-slate-600 text-sm mt-1 leading-relaxed">{action}</p>
+            <p className="text-mtg-orange font-bold text-[11px] mt-2 uppercase tracking-wider">Deliverable: {deliverable}</p>
           </div>
         ) : (
           <div className="md:hidden">
-             <h4 className="font-bold text-mtg-blue text-xl">{title}</h4>
-             <p className="text-gray-600 text-sm mt-1">{action}</p>
-             <p className="text-mtg-orange font-bold text-[10px] mt-2 uppercase tracking-tight">Deliverable: {deliverable}</p>
+             <h4 className="font-bold text-mtg-blue text-lg">{title}</h4>
+             <p className="text-slate-600 text-sm mt-1 leading-relaxed">{action}</p>
+             <p className="text-mtg-orange font-bold text-[11px] mt-2 uppercase tracking-wider">Deliverable: {deliverable}</p>
           </div>
         )}
       </div>

@@ -9,7 +9,7 @@ const ProblemSection: React.FC = () => {
         <div className="text-center space-y-4">
           <h3 className="text-2xl font-bold text-mtg-blue">Local search is the new word-of-mouth.</h3>
           <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed text-lg">
-            Over <strong>80% of local purchases</strong> happen within 24 hours of a search. If your profile is hidden, you simply don't exist to ready-to-buy customers.
+               Most local buying decisions <strong>happen fast</strong> - often within 24 hours of a search. If your profile is hidden, you don't exist for ready-to-buy customers.
           </p>
         </div>
 
@@ -22,24 +22,24 @@ const ProblemSection: React.FC = () => {
               icon={<VisibilityIcon className="w-6 h-6 text-mtg-orange" />} 
           />
           <MetricCard 
-              label="The Engagement Trap"
+              label="The Action Gap"
               value="Direct"
-              trend="Lead Flow Injection"
-              description="Calls, website clicks, and direction requests generated directly from your profile."
+              trend="Inbound Actions"
+              description="Calls, website clicks, and direction requests from your profile."
               icon={<EngagementIcon className="w-6 h-6 text-mtg-orange" />} 
           />
           <MetricCard 
               label="The Credibility Factor"
               value="3+ Stars"
-              trend="87% Clicks Capture"
-              description="Reviews are your digital proof. A lack of recent feedback is a direct threat to volume." 
+              trend="Trust Advantage"
+              description="Reviews are your digital proof. No recent feedback is a sales-killer." 
               icon={<CredibilityIcon className="w-6 h-6 text-mtg-orange" />}
           />
         </div>
 
         <div className="bg-mtg-blue text-white p-8 rounded-2xl text-center shadow-lg transform hover:-translate-y-1 transition-transform">
             <p className="text-xl italic leading-relaxed">
-                "MTG's focus is on the <strong className="text-mtg-orange">structure of local ranking</strong>, not fleeting marketing gimmicks."
+                "MTG builds on the <strong className="text-mtg-orange">structure of local ranking</strong>, not fleeting marketing gimmicks."
             </p>
         </div>
       </div>

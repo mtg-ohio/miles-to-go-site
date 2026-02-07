@@ -6,19 +6,19 @@ const BaselineSection: React.FC = () => {
     <SectionWrapper title="Your Visibility Baseline." className="bg-gray-50">
       <div className="max-w-4xl mx-auto space-y-12">
         <p className="text-lg text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
-          Every system starts with an honest, data-driven look at the starting line. We benchmark your performance to measure precise ROI.
+          Every system starts with an honest baseline. No guessing. No assumptions.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 text-left">
           <MetricTile 
             category="Discovery"
             title="Visibility Score"
-            description="How often you appear versus your top 3 local competitors."
+            description="How often you appear compared to your top 3 local competitors."
           />
           <MetricTile 
             category="Volume"
             title="Total Profile Views"
-            description="The 'Top of Funnel' count for Search and Map appearances."
+            description="Total search and map views, combined."
           />
           <MetricTile 
             category="Trust"
@@ -28,13 +28,13 @@ const BaselineSection: React.FC = () => {
           <MetricTile 
             category="Conversion"
             title="High-Intent Actions"
-            description="Hard leads: Website clicks, directions, and phone calls."
+            description="Phone calls, website clicks, and direction requests."
           />
         </div>
 
         <div className="pt-6 border-t border-gray-200">
-           <p className="text-mtg-text font-medium text-center">
-             We move the needle from <span className="text-mtg-orange font-bold uppercase tracking-wider">feeling busy</span> to <span className="text-mtg-blue font-bold uppercase tracking-wider">knowing what converts</span>.
+           <p className="text-mtg-text font-medium text-center text-2xl">
+             We move the needle from <span className="text-mtg-orange font-bold tracking-wide">feeling busy</span> to <span className="text-mtg-blue font-bold tracking-wide">knowing what converts</span>.
            </p>
         </div>
       </div>
