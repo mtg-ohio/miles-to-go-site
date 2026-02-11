@@ -3,10 +3,10 @@ import SectionWrapper from './SectionWrapper';
 
 const BattlefieldSection: React.FC = () => {
   return (
-    <SectionWrapper title="Know the Local Battlefield." className="bg-gray-50">
+    <SectionWrapper title="Know the Local Battlefield." id="battlefield" className="bg-slate-50">
       <div className="max-w-4xl mx-auto space-y-12">
         <p className="text-base md:text-lg text-slate-700 leading-relaxed text-center max-w-2xl mx-auto">
-          Before we build, we benchmark your top three local competitors. No guessing, just gaps - mapped into your advantage.
+          Before we build, we benchmark your top 3 local competitors. No guessing, just gaps - mapped into your advantage.
         </p>
         <p className="text-xs font-bold uppercase tracking-widest text-mtg-orange text-center">
           Competitive Scorecard

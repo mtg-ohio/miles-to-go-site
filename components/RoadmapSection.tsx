@@ -13,14 +13,14 @@ const RoadmapSection: React.FC = () => {
         {/* Progress Line */}
         <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gray-100 -translate-x-1/2 z-0"></div>
 
-        <div className="space-y-16 relative z-10">
+        <div className="space-y-10 relative z-10">
           {/* STAGE 1 GROUP */}
           <div className="relative">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-mtg-blue/10 md:hidden"></div>
-            <div className="mb-8 flex items-center justify-center">
+            <div className="mb-6 flex items-center justify-center">
               <span className="bg-mtg-blue text-white px-4 py-1 rounded text-[10px] font-black uppercase tracking-widest">Stage 1: Build</span>
             </div>
-            <div className="space-y-12">
+            <div className="space-y-10">
               <PathStep 
                 icon={<FoundationIcon className="w-6 h-6" />}
                 number="01"
@@ -41,9 +41,9 @@ const RoadmapSection: React.FC = () => {
           </div>
 
           {/* STAGE 2 GROUP */}
-          <div className="relative pt-8">
+          <div className="relative pt-4">
           <div className="absolute -left-4 top-0 bottom-0 w-1 bg-mtg-orange/10 md:hidden"></div>
-            <div className="mb-8 flex items-center justify-center">
+            <div className="mb-6 flex items-center justify-center">
               <span className="bg-mtg-orange text-white px-4 py-1 rounded text-[10px] font-black uppercase tracking-widest">Stage 2: Run</span>
             </div>
             <PathStep 
@@ -57,7 +57,7 @@ const RoadmapSection: React.FC = () => {
           </div>
           
           {/* The 30% Milestone */}
-          <div className="flex flex-col items-center justify-center pt-8">
+          <div className="flex flex-col items-center justify-center pt-4">
             <div className="bg-white border-2 border-mtg-orange text-mtg-orange px-6 py-2 rounded-full font-bold text-sm uppercase tracking-widest shadow-lg">
               The 30% Growth Benchmark
             </div>

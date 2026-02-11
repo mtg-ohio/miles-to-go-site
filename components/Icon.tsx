@@ -118,17 +118,33 @@ export const DownloadIcon: React.FC<IconProps> = ({ className }) => (
 
 export const HeroGraphic: React.FC<{className?: string}> = ({className}) => (
     <div className={`relative ${className}`}>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-mtg-orange/10 rounded-full blur-2xl opacity-70"></div>
+        {/* Production-localized Ambient Glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-mtg-orange/10 rounded-full blur-3xl opacity-60"></div>
+        
         <svg viewBox="0 0 400 200" className="relative w-full max-w-lg mx-auto">
+            <style>
+              {`
+                @keyframes dash {
+                  to { stroke-dashoffset: 0; }
+                }
+                .dash-line {
+                  stroke-dasharray: 8;
+                  stroke-dashoffset: 100;
+                  animation: dash 10s linear infinite;
+                }
+              `}
+            </style>
+            
             {/* Map lines */}
-            <path d="M50 180 Q 150 150 200 100 T 350 50" stroke="#CBD5E0" strokeWidth="2" fill="none" strokeDasharray="4" />
-            <path d="M20 50 Q 100 80 200 100 T 380 160" stroke="#CBD5E0" strokeWidth="2" fill="none" strokeDasharray="4" />
-            <path d="M100 20 Q 150 50 200 100 T 300 190" stroke="#CBD5E0" strokeWidth="2" fill="none" strokeDasharray="4" />
+            <path className="dash-line" d="M50 180 Q 150 150 200 100 T 350 50" stroke="#CBD5E0" strokeWidth="2" fill="none" />
+            <path className="dash-line" d="M20 50 Q 100 80 200 100 T 380 160" stroke="#CBD5E0" strokeWidth="2" fill="none" />
+            <path className="dash-line" d="M100 20 Q 150 50 200 100 T 300 190" stroke="#CBD5E0" strokeWidth="2" fill="none" />
             
             {/* Magnifying glass */}
             <g transform="translate(100 60) rotate(-30)">
-                <circle cx="0" cy="0" r="40" strokeWidth="6" stroke="#2c3e50" fill="rgba(255,255,255,0.7)"/>
+                <circle cx="0" cy="0" r="40" strokeWidth="6" stroke="#2c3e50" fill="rgba(255,255,255,0.85)"/>
                 <line x1="35" y1="35" x2="65" y2="65" strokeWidth="8" stroke="#2c3e50" strokeLinecap="round" />
+                <circle cx="0" cy="0" r="30" stroke="#d35400" strokeWidth="0.5" fill="none" strokeDasharray="2 4" opacity="0.4" />
             </g>
 
              {/* Target Pin */}
@@ -138,10 +154,10 @@ export const HeroGraphic: React.FC<{className?: string}> = ({className}) => (
                 <circle cx="0" cy="0" r="10" fill="#d35400" stroke="white" strokeWidth="2" />
             </g>
 
-            {/* Other locations */}
-            <circle cx="80" cy="150" r="8" fill="#34495e" />
-            <circle cx="320" cy="70" r="8" fill="#34495e" />
-            <circle cx="300" cy="160" r="8" fill="#34495e" />
+            {/* Competitor Markers */}
+            <circle cx="80" cy="150" r="8" fill="#34495e" opacity="0.6" />
+            <circle cx="320" cy="70" r="8" fill="#34495e" opacity="0.6" />
+            <circle cx="300" cy="160" r="8" fill="#34495e" opacity="0.6" />
         </svg>
     </div>
 );
