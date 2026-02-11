@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <ProblemSection />
         <BaselineSection />
         <DifferenceSection />
-        <RoadmapSection />
+        < RoadmapSection />
         <BattlefieldSection />
         <PricingSection />
         <ScaleSection />

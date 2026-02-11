@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2c3e50" />
     
-    <!-- Title & Description for SEO -->
     <title>Miles to Go | Local Leads System</title>
-    <meta name="description" content="Turn your Google Business Profile into a reliable source of new business. The MTG Local Leads System provides the structure and strategy local businesses need to dominate search results." />
-    <meta name="keywords" content="Google Business Profile, Local SEO, Lead Generation, Marketing Systems, Ohio Business Growth" />
+    <meta name="description" content="Dominate local search. MTG provides the systems, structure, and strategy established businesses need to turn Google Business Profiles into predictable lead engines." />
+    <meta name="keywords" content="Google Business Profile, Local SEO, Lead Generation, Marketing Systems, Ohio Business Growth, Systems Engineering Marketing" />
     <meta name="author" content="Miles to Go, LLC" />
 
-    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Miles to Go | Local Leads System" />
     <meta property="og:description" content="Professional Google Business Profile optimization and lead generation systems for local businesses." />
     <meta property="og:url" content="https://milestogoohio.com" />
+    <meta property="og:image" content="/hero-graphic.svg" />
     
-    <!-- JSON-LD Structured Data for AI/LLM Optimization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -37,40 +37,12 @@
       "areaServed": {
         "@type": "State",
         "name": "Ohio"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Local Leads System",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Technical Installation",
-              "description": "Complete compliance audit and error elimination for local business profiles."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Content Activation",
-              "description": "Strategic visual asset deployment and keyword-rich data integration."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Performance Management",
-              "description": "Full-service Google Business Profile management aimed at 30% lead growth."
-            }
-          }
-        ]
       }
     }
     </script>
     
+    <!-- Production Build: Tailwind is pre-compiled into index.css in a real build step. 
+         For this localized prototype, we keep the engine but harden the config. -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -82,15 +54,21 @@
               'mtg-text': '#34495e',
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: [
+                'Inter', 
+                '-apple-system', 
+                'BlinkMacSystemFont', 
+                '"Segoe UI"', 
+                'Roboto', 
+                'Helvetica', 
+                'Arial', 
+                'sans-serif'
+              ],
             }
           }
         }
       }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script type="importmap">
     {
       "imports": {
