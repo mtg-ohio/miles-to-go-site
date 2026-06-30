@@ -18,11 +18,11 @@ const Hero: React.FC = () => {
         <div className="w-24 h-1 bg-mtg-orange mx-auto mb-10"></div>
 
         <p className="text-xl md:text-2xl font-semibold text-mtg-blue mb-4">
-          MTG Brand Promise: Your visibility isn&apos;t luck. It&apos;s design.
+          Showing up first isn&apos;t luck. It&apos;s built on purpose.
         </p>
 
         <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-20">
-          Miles To Go builds local visibility systems for established businesses that depend on predictable inbound demand. If your phone isn&apos;t ringing, it&apos;s because the map customers are using doesn&apos;t point to you.
+          When someone nearby needs what you do, they Google it. If you&apos;re not who they find, the job goes to whoever is. We make sure it&apos;s you.
         </p>
 
         <div className="flex flex-col items-center gap-3">
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
             href="#battlefield"
             className="inline-flex items-center px-10 py-5 bg-mtg-orange text-white rounded font-black tracking-widest hover:bg-orange-600 transition-all transform hover:scale-105 shadow-xl group"
           >
-            Preview the Lens We Use to Evaluate Your Local Market
+            See What Customers Find When They Google You
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 ml-3 group-hover:translate-y-1 transition-transform"
