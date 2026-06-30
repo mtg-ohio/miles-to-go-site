@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
         </p>
 
         <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-20">
-          When someone nearby needs what you do, they Google it. If you&apos;re not who they find, the job goes to whoever is. We make sure it&apos;s you.
+          When someone nearby needs what you do, they Google it or ask an AI assistant. If you&apos;re not who they find, the job goes to whoever is. We make sure it&apos;s you.
         </p>
 
         <div className="flex flex-col items-center gap-3">
