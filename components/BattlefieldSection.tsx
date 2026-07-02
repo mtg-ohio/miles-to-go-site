@@ -3,23 +3,23 @@ import SectionWrapper from './SectionWrapper';
 
 const BattlefieldSection: React.FC = () => {
   return (
-    <SectionWrapper title="Know the Local Battlefield." id="battlefield" className="bg-slate-50">
+    <SectionWrapper title="See How You Stack Up." id="battlefield" className="bg-slate-50">
       <div className="max-w-4xl mx-auto space-y-12">
         <p className="text-base md:text-lg text-slate-700 leading-relaxed text-center max-w-2xl mx-auto">
-          Before we build, we benchmark your top 3 local competitors. No guessing, just gaps - mapped into your advantage.
+          Before we start, we size up your top 3 local competitors. We find the gaps they&apos;re leaving open—and use them.
         </p>
         <p className="text-xs font-bold uppercase tracking-widest text-mtg-orange text-center">
-          Competitive Scorecard
+          The Scorecard
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ScorecardItem label="Search Ranking" value="Keyword Gaps" description="We pinpoint where they are invisible so you can rank first." />
-          <ScorecardItem label="Review Velocity" value="Recency Lapses" description="Old reviews are an opening for your fresh, active profile." />
-          <ScorecardItem label="Visual Proof" value="Stock Photo Trap" description="Authentic job photos beat generic stock imagery every time." />
-          <ScorecardItem label="Profile Activity" value="Inactive Posts" description="Dormant profiles are easy to displace with structured content." />
-          <ScorecardItem label="Service Range" value="Coverage Gaps" description="We target the geographic areas your competitors ignore." />
+          <ScorecardItem label="Search Ranking" value="Where They're Weak" description="We find the searches they're missing so you can win them." />
+          <ScorecardItem label="Reviews" value="Old and Stale" description="When their reviews go quiet, your fresh ones win." />
+          <ScorecardItem label="Photos" value="Generic Stock" description="Real photos of your work beat stock images every time." />
+          <ScorecardItem label="Activity" value="Gone Quiet" description="A profile that's gone quiet is easy to pass with steady updates." />
+          <ScorecardItem label="Service Area" value="Spots They Miss" description="We go after the areas your competitors ignore." />
           <div className="bg-mtg-orange p-6 rounded-xl border border-mtg-orange/40 flex flex-col justify-center items-center text-center text-white shadow-lg">
-            <p className="text-xs font-bold uppercase tracking-widest opacity-80">Our Focus</p>
-            <p className="text-2xl font-black">Strategic Dominance</p>
+            <p className="text-xs font-bold uppercase tracking-widest opacity-80">Your Edge</p>
+            <p className="text-2xl font-black">Show Up First</p>
           </div>
         </div>
       </div>

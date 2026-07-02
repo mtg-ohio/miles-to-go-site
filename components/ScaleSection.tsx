@@ -10,31 +10,31 @@ const ScaleSection: React.FC = () => {
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="inline-block px-5 py-2 bg-white/10 border border-white/10 rounded-full text-white text-[10px] font-black uppercase tracking-[0.3em] mb-8 backdrop-blur-sm">
-          Phase III: High Volume Expansion
+          Stage 3: Expand
         </div>
         <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 uppercase tracking-tight">
-          Stage 3: Scale
+          Grow Bigger.
         </h2>
         
         <div className="bg-white/[0.03] border border-white/10 p-1 md:p-1.5 rounded-3xl backdrop-blur-md max-w-2xl mx-auto shadow-2xl overflow-hidden ring-1 ring-white/10">
           <div className="bg-mtg-blue/40 p-10 rounded-[22px] border border-white/5">
             <div className="inline-block px-3 py-1 bg-mtg-orange text-white text-[9px] font-black uppercase tracking-widest rounded mb-6">
-              Prerequisite: 30% Growth Benchmark Achieved
+              Once You&apos;ve Hit the 30% Mark
             </div>
             
             <p className="text-2xl md:text-3xl text-white leading-tight mb-6 font-bold">
-              Ready for <span className="text-mtg-orange">Strategic Dominance?</span>
+              Ready to <span className="text-mtg-orange">Take the Lead?</span>
             </p>
 
             <p className="text-slate-300 mb-12 text-base md:text-lg leading-relaxed font-medium">
-              Once the system is proven and stable, we expand coverage and frequency across the market.
+              Once things are working and steady, we expand into more areas and reach more customers.
             </p>
 
             <div className="space-y-8">
               <div className="w-16 h-1 bg-white/20 mx-auto"></div>
               
               <h4 className="text-white/70 font-black text-xs uppercase tracking-[0.4em]">
-                Start Your Scale Conversation
+                Let&apos;s Talk
               </h4>
 
               <div className="flex flex-col sm:flex-row justify-center items-stretch gap-4">

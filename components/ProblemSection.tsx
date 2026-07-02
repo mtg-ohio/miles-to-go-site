@@ -11,39 +11,39 @@ const ProblemSection: React.FC = () => {
             Local search is the new word-of-mouth.
           </h3>
           <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed text-lg">
-            Most local buying decisions <strong>happen fast</strong> - often within 24 hours of a search.
-            If your profile is hidden, you don&apos;t exist for ready-to-buy customers.
+            Most people hire within <strong>a day</strong> of searching.
+            If you don&apos;t show up, they call whoever does.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
           <MetricCard
-            label="The Visibility Gap"
+            label="Get Seen"
             value="+200%"
-            trend="Avg. View Increase"
-            description="How many times your listing appears when customers search for your services."
+            trend="More Profile Views"
+            description="How often you show up when someone searches for what you do."
             icon={<VisibilityIcon className="w-6 h-6 text-mtg-orange" />}
           />
           <MetricCard
-            label="The Action Gap"
+            label="Get Calls"
             value="Direct"
-            trend="Inbound Actions"
-            description="Calls, website clicks, and direction requests from your profile."
+            trend="Calls & Clicks"
+            description="Calls, website taps, and directions straight from your listing."
             icon={<EngagementIcon className="w-6 h-6 text-mtg-orange" />}
           />
           <MetricCard
-            label="The Credibility Factor"
+            label="Get Trusted"
             value="3+ Stars"
-            trend="Trust Advantage"
-            description="Reviews are your digital proof. No recent feedback is a sales-killer."
+            trend="Reviews That Win"
+            description="Reviews are proof. Fresh, strong ones win the job."
             icon={<CredibilityIcon className="w-6 h-6 text-mtg-orange" />}
           />
         </div>
 
         <div className="bg-mtg-blue text-white p-8 rounded-2xl text-center shadow-lg transform hover:-translate-y-1 transition-transform">
           <p className="text-xl italic leading-relaxed">
-            &quot;MTG builds on the <strong className="text-mtg-orange">structure of local ranking</strong>,
-            not fleeting marketing gimmicks.&quot;
+            &quot;We build on how Google actually ranks <strong className="text-mtg-orange">local businesses</strong>,
+            not gimmicks that fade.&quot;
           </p>
         </div>
 
@@ -57,7 +57,7 @@ const ProblemSection: React.FC = () => {
             
             <h4 className="text-xl font-bold text-mtg-blue mb-2">Skip the presentation.</h4>
             <p className="text-sm text-slate-500 mb-8 max-w-md mx-auto leading-relaxed">
-              If you&apos;re already losing revenue to invisible listings, you don&apos;t need a pitch. You need a system.
+              If people already can&apos;t find you, you don&apos;t need a sales pitch. You need it fixed.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 mb-2">
@@ -87,7 +87,7 @@ const ProblemSection: React.FC = () => {
             {/* Bottom Label - Mirrored Design */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white px-4 z-10">
               <span className="text-[10px] text-slate-400 font-black uppercase tracking-[0.25em] whitespace-nowrap">
-                Direct Access to Systems Engineering
+                No Salespeople. Just Michael.
               </span>
             </div>
           </div>

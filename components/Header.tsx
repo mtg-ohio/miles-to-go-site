@@ -62,7 +62,7 @@ const Header: React.FC = () => {
             <span className="hidden sm:inline">Local Leads System</span>
           </h1>
           <p className="text-xs text-slate-300 mt-1 uppercase tracking-widest font-medium">
-            Systems | Structure | Strategy
+            Get Found. Get Chosen. Get Calls.
           </p>
         </div>
 

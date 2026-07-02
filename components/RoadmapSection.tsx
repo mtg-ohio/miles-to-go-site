@@ -4,10 +4,10 @@ import { FoundationIcon, RocketIcon, AutomationIcon } from './Icon';
 
 const RoadmapSection: React.FC = () => {
   return (
-    <SectionWrapper title="The System Lifecycle.">
+    <SectionWrapper title="How It Works.">
       <div className="max-w-4xl mx-auto relative">
         <p className="text-base md:text-lg text-slate-600 mb-14 -mt-6 font-medium leading-relaxed">
-          A controlled path from visibility to dominance.
+          A clear path from getting found to staying ahead.
         </p>
         
         {/* Progress Line */}
@@ -18,23 +18,23 @@ const RoadmapSection: React.FC = () => {
           <div className="relative">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-mtg-blue/10 md:hidden"></div>
             <div className="mb-6 flex items-center justify-center">
-              <span className="bg-mtg-blue text-white px-4 py-1 rounded text-[10px] font-black uppercase tracking-widest">Stage 1: Build</span>
+              <span className="bg-mtg-blue text-white px-4 py-1 rounded text-[10px] font-black uppercase tracking-widest">Stage 1: Set Up</span>
             </div>
             <div className="space-y-10">
               <PathStep 
                 icon={<FoundationIcon className="w-6 h-6" />}
                 number="01"
-                title="Compliance Audit"
-                action="Fixing the ranking, trust, and data issues that keep customers from finding you."
-                deliverable="100% Verified Profile"
+                title="Fix the Foundation"
+                action="We clean up the ranking, trust, and info problems keeping people from finding you."
+                deliverable="A fully verified profile"
                 alignment="left"
               />
               <PathStep 
                 icon={<RocketIcon className="w-6 h-6" />}
                 number="02"
-                title="Content Activation"
-                action="Deploying geo-aligned assets and structured content designed for discovery."
-                deliverable="Active Ranking Growth"
+                title="Build Your Presence"
+                action="Real photos, posts, and details that help you show up where it counts."
+                deliverable="Steady ranking growth"
                 alignment="right"
               />
             </div>
@@ -44,14 +44,14 @@ const RoadmapSection: React.FC = () => {
           <div className="relative pt-4">
           <div className="absolute -left-4 top-0 bottom-0 w-1 bg-mtg-orange/10 md:hidden"></div>
             <div className="mb-6 flex items-center justify-center">
-              <span className="bg-mtg-orange text-white px-4 py-1 rounded text-[10px] font-black uppercase tracking-widest">Stage 2: Run</span>
+              <span className="bg-mtg-orange text-white px-4 py-1 rounded text-[10px] font-black uppercase tracking-widest">Stage 2: Keep It Going</span>
             </div>
             <PathStep 
               icon={<AutomationIcon className="w-6 h-6" />}
               number="03"
-              title="Performance Management"
-              action="Continuous optimization through reviews, signals, and a managed content engine."
-              deliverable="The 90-Day Growth Engine"
+              title="Keep the Calls Coming"
+              action="Ongoing posts, reviews, and tune-ups that keep you near the top."
+              deliverable="Steady month-over-month growth"
               alignment="left"
             />
           </div>
@@ -59,11 +59,11 @@ const RoadmapSection: React.FC = () => {
           {/* The 30% Milestone */}
           <div className="flex flex-col items-center justify-center pt-4">
             <div className="bg-white border-2 border-mtg-orange text-mtg-orange px-6 py-2 rounded-full font-bold text-sm uppercase tracking-widest shadow-lg">
-              The 30% Growth Benchmark
+              The 30% Mark
             </div>
             <div className="mt-4 text-center">
-              <h4 className="text-2xl font-black text-mtg-blue">Sustained Qualified Call Growth</h4>
-              <p className="mt-4 text-base font-medium text-slate-700">Only then does scaling make sense.</p>
+              <h4 className="text-2xl font-black text-mtg-blue">More Good Calls, Month After Month</h4>
+              <p className="mt-4 text-base font-medium text-slate-700">Only then does it make sense to expand.</p>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ const PathStep: React.FC<PathStepProps> = ({ number, title, action, deliverable,
           <div className="pl-12">
             <h4 className="font-bold text-mtg-blue text-lg">{title}</h4>
             <p className="text-slate-600 text-sm mt-1 leading-relaxed">{action}</p>
-            <p className="text-mtg-orange font-bold text-[11px] mt-2 uppercase tracking-wider">Deliverable: {deliverable}</p>
+            <p className="text-mtg-orange font-bold text-[11px] mt-2 uppercase tracking-wider">You get: {deliverable}</p>
           </div>
         )}
       </div>
@@ -106,13 +106,13 @@ const PathStep: React.FC<PathStepProps> = ({ number, title, action, deliverable,
           <div className="md:pr-12 md:text-right">
             <h4 className="font-bold text-mtg-blue text-lg">{title}</h4>
             <p className="text-slate-600 text-sm mt-1 leading-relaxed">{action}</p>
-            <p className="text-mtg-orange font-bold text-[11px] mt-2 uppercase tracking-wider">Deliverable: {deliverable}</p>
+            <p className="text-mtg-orange font-bold text-[11px] mt-2 uppercase tracking-wider">You get: {deliverable}</p>
           </div>
         ) : (
           <div className="md:hidden">
              <h4 className="font-bold text-mtg-blue text-lg">{title}</h4>
              <p className="text-slate-600 text-sm mt-1 leading-relaxed">{action}</p>
-             <p className="text-mtg-orange font-bold text-[11px] mt-2 uppercase tracking-wider">Deliverable: {deliverable}</p>
+             <p className="text-mtg-orange font-bold text-[11px] mt-2 uppercase tracking-wider">You get: {deliverable}</p>
           </div>
         )}
       </div>

@@ -4,39 +4,39 @@ import { TrophyIcon, UserIcon, DiamondIcon, GearsIcon } from './Icon';
 
 const DifferenceSection: React.FC = () => {
   return (
-    <SectionWrapper title="Designing Your Difference." id="compatibility">
+    <SectionWrapper title="Why They'll Pick You." id="compatibility">
       <div className="max-w-4xl mx-auto space-y-12">
         <p className="text-lg text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
-          Stage 1 (Build) only works if your message converts. We shape your profile around the work you actually want, so the right customers choose you.
+          Showing up is only half of it. We set up your profile around the jobs you actually want—so the right customers pick you.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-8">
           <MiniCard 
             icon={<TrophyIcon className="w-5 h-5" />}
-            title="The 90-Day North Star"
-            text="Our goal is a 30% increase in qualified calls within the first 90 days."
+            title="The 90-Day Goal"
+            text="The aim: 30% more good calls in your first 90 days."
             isHighlighted={true}
           />
           <MiniCard 
             icon={<UserIcon className="w-5 h-5" />}
-            title="Ideal Job Targeting"
-            text="We don't optimize for volume; we optimize for the specific jobs that drive your highest margins."
+            title="The Right Jobs, Not Just More"
+            text="We don't chase every call. We go after the jobs that pay you best."
           />
           <MiniCard 
             icon={<DiamondIcon className="w-5 h-5" />}
-            title="Differentiation"
-            text="We'll make it obvious why a customer should choose you over the other options nearby."
+            title="Stand Out"
+            text="We make it obvious why someone should call you instead of the other guy."
           />
           <MiniCard 
             icon={<GearsIcon className="w-5 h-5" />}
-            title="Evidence Systems"
-            text="We implement workflows for constant job-site proof and a reliable review engine."
+            title="Proof That Sells"
+            text="A simple habit of job-site photos and a steady stream of fresh reviews."
           />
         </div>
 
         <div className="bg-mtg-blue text-white p-8 rounded-2xl text-center shadow-lg transform hover:-translate-y-1 transition-transform">
             <p className="text-xl italic leading-relaxed">
-                A documented <strong className="text-mtg-orange">unique selling proposition</strong> - ready for activation.
+                A clear, simple reason for people to <strong className="text-mtg-orange">choose you</strong>—ready to put to work.
             </p>
         </div>
       </div>

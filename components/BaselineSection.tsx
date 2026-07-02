@@ -3,38 +3,38 @@ import SectionWrapper from './SectionWrapper';
 
 const BaselineSection: React.FC = () => {
   return (
-    <SectionWrapper title="Your Visibility Baseline." className="bg-gray-50">
+    <SectionWrapper title="Where You Stand Today." className="bg-gray-50">
       <div className="max-w-4xl mx-auto space-y-12">
         <p className="text-lg text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
-          Every system starts with an honest baseline. No guessing. No assumptions.
+          We start with an honest look at where you stand today. No guessing.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 text-left">
           <MetricTile 
-            category="Discovery"
-            title="Visibility Score"
-            description="How often you appear compared to your top 3 local competitors."
+            category="Getting Found"
+            title="How Often You Show Up"
+            description="How often you appear versus the top 3 competitors near you."
           />
           <MetricTile 
-            category="Volume"
-            title="Total Profile Views"
-            description="Total search and map views, combined."
+            category="Views"
+            title="Times You Get Seen"
+            description="Total times people saw you on Search and Maps."
           />
           <MetricTile 
-            category="Trust"
-            title="Review Health"
-            description="Analysis of rating, volume, and recency of customer feedback."
+            category="Reviews"
+            title="Your Review Picture"
+            description="Your rating, how many you have, and how fresh they are."
           />
           <MetricTile 
-            category="Conversion"
-            title="High-Intent Actions"
-            description="Phone calls, website clicks, and direction requests."
+            category="Calls"
+            title="What People Actually Do"
+            description="Calls, website taps, and directions people ask for."
           />
         </div>
 
         <div className="pt-6 border-t border-gray-200">
            <p className="text-mtg-text font-medium text-center text-2xl">
-             We move the needle from <span className="text-mtg-orange font-bold tracking-wide">feeling busy</span> to <span className="text-mtg-blue font-bold tracking-wide">knowing what converts</span>.
+             We take you from <span className="text-mtg-orange font-bold tracking-wide">guessing</span> to <span className="text-mtg-blue font-bold tracking-wide">knowing what brings the calls</span>.
            </p>
         </div>
       </div>
