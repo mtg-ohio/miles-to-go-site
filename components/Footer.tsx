@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
 
           <div className="text-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
             <p className="text-sm font-bold text-mtg-orange tracking-widest opacity-90 whitespace-nowrap">
-              SYSTEMS | STRUCTURE | STRATEGY
+              Get Found. Get Chosen. Get Calls.
             </p>
           </div>
 
