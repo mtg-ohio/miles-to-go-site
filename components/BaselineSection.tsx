@@ -28,7 +28,7 @@ const BaselineSection: React.FC = () => {
           <MetricTile 
             category="Calls"
             title="What People Actually Do"
-            description="Calls, website taps, and directions people ask for."
+            description="Calls, website clicks, and directions people ask for."
           />
         </div>
 
