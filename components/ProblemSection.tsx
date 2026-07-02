@@ -28,7 +28,7 @@ const ProblemSection: React.FC = () => {
             label="Get Calls"
             value="Direct"
             trend="Calls & Clicks"
-            description="Calls, website taps, and directions straight from your listing."
+            description="Calls, website clicks, and directions straight from your listing."
             icon={<EngagementIcon className="w-6 h-6 text-mtg-orange" />}
           />
           <MetricCard
@@ -87,7 +87,7 @@ const ProblemSection: React.FC = () => {
             {/* Bottom Label - Mirrored Design */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white px-4 z-10">
               <span className="text-[10px] text-slate-400 font-black uppercase tracking-[0.25em] whitespace-nowrap">
-                No Salespeople. Just Michael.
+                No Sales Team. No Runaround.
               </span>
             </div>
           </div>
