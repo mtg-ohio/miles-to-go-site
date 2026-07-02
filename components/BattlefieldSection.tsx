@@ -6,13 +6,13 @@ const BattlefieldSection: React.FC = () => {
     <SectionWrapper title="See How You Stack Up." id="battlefield" className="bg-slate-50">
       <div className="max-w-4xl mx-auto space-y-12">
         <p className="text-base md:text-lg text-slate-700 leading-relaxed text-center max-w-2xl mx-auto">
-          Before we start, we size up your top 3 local competitors. We find the gaps they&apos;re leaving open—and use them.
+          Before we start, we size up your top 3 local competitors. We find the gaps they&apos;re leaving open-and use them.
         </p>
         <p className="text-xs font-bold uppercase tracking-widest text-mtg-orange text-center">
           The Scorecard
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ScorecardItem label="Search Ranking" value="Where They're Weak" description="We find the searches they're missing so you can win them." />
+          <ScorecardItem label="Search Ranking" value="Where They're Weak" description="We find the search terms they're missing so you can win them." />
           <ScorecardItem label="Reviews" value="Old and Stale" description="When their reviews go quiet, your fresh ones win." />
           <ScorecardItem label="Photos" value="Generic Stock" description="Real photos of your work beat stock images every time." />
           <ScorecardItem label="Activity" value="Gone Quiet" description="A profile that's gone quiet is easy to pass with steady updates." />
