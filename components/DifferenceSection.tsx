@@ -36,7 +36,7 @@ const DifferenceSection: React.FC = () => {
 
         <div className="bg-mtg-blue text-white p-8 rounded-2xl text-center shadow-lg transform hover:-translate-y-1 transition-transform">
             <p className="text-xl italic leading-relaxed">
-                A clear, simple reason for people to <strong className="text-mtg-orange">choose you</strong>—ready to put to work.
+                A clear, simple reason for people to <strong className="text-mtg-orange">choose you</strong>-ready to put to work.
             </p>
         </div>
       </div>
