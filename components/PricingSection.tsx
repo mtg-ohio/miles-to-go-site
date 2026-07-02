@@ -18,15 +18,18 @@ const PricingSection: React.FC = () => {
               <div className="relative">
                 <p className="text-[10px] font-black text-mtg-orange uppercase tracking-[0.2em] mb-2">Phase I</p>
                 <h4 className="text-xl font-bold text-mtg-blue mb-3">Fix the Foundation</h4>
-                <p className="text-slate-600 text-sm mb-6 leading-relaxed">We clean up the ranking, trust, and info problems keeping people from finding you.</p>
-                <p className="text-3xl font-black text-mtg-blue">$650</p>
+                <p className="text-slate-600 text-sm leading-relaxed">We clean up the ranking, trust, and info problems keeping people from finding you.</p>
               </div>
               <div className="relative md:pl-12 md:border-l border-slate-100">
                 <p className="text-[10px] font-black text-mtg-orange uppercase tracking-[0.2em] mb-2">Phase II</p>
                 <h4 className="text-xl font-bold text-mtg-blue mb-3">Build Your Presence</h4>
-                <p className="text-slate-600 text-sm mb-6 leading-relaxed">Real photos, posts, and details that help you show up where it counts.</p>
-                <p className="text-3xl font-black text-mtg-blue">$750</p>
+                <p className="text-slate-600 text-sm leading-relaxed">Real photos, posts, and details that help you show up where it counts.</p>
               </div>
+            </div>
+            <div className="mt-10 pt-8 border-t border-slate-200 text-center">
+              <p className="text-[10px] font-black text-mtg-orange uppercase tracking-[0.25em] mb-2">One-Time Setup</p>
+              <p className="text-4xl font-black text-mtg-blue">$1,400</p>
+              <p className="mt-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest">Phases I &amp; II, complete</p>
             </div>
           </div>
         </div>
@@ -49,7 +52,7 @@ const PricingSection: React.FC = () => {
                   <div className="lg:col-span-3 text-left">
                      <h3 className="text-2xl md:text-3xl font-black text-mtg-blue mb-3">Keep the Calls Coming</h3>
                      <p className="text-slate-600 mb-8 leading-relaxed text-lg">
-                      Turning views into steady, good calls—<strong>that 30% goal</strong>.
+                      Turning views into steady, good calls–<strong>that 30% goal</strong>.
                     </p>
 
                      <ul className="grid sm:grid-cols-2 gap-4">
@@ -59,7 +62,7 @@ const PricingSection: React.FC = () => {
                         </li>
                         <li className="flex items-center text-sm font-medium text-slate-700">
                           <CheckCircleIcon className="w-5 h-5 mr-3 text-mtg-orange shrink-0" />
-                          Review Requests, Handled
+                          Review Requests-Handled
                         </li>
                         <li className="flex items-center text-sm font-medium text-slate-700">
                           <CheckCircleIcon className="w-5 h-5 mr-3 text-mtg-orange shrink-0" />
@@ -67,7 +70,7 @@ const PricingSection: React.FC = () => {
                         </li>
                         <li className="flex items-center text-sm font-medium text-slate-700">
                           <CheckCircleIcon className="w-5 h-5 mr-3 text-mtg-orange shrink-0" />
-                          Hold Your Spot on Google
+                          Stay On Top
                         </li>
                      </ul>
                   </div>
@@ -75,9 +78,8 @@ const PricingSection: React.FC = () => {
                      <p className="text-[10px] font-black text-mtg-orange uppercase tracking-[0.25em] mb-4">Monthly Fee</p>
                      <div className="flex flex-col items-center">
                         <p className="text-2xl sm:text-3xl md:text-4xl font-black text-mtg-blue tracking-tighter whitespace-nowrap">
-                          $550 – $650
+                          $625
                         </p>
-                        <p className="mt-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest">Depends on your area</p>
                      </div>
                      <div className="mt-6 pt-6 border-t border-slate-200">
                         <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.15em]">3-Month Minimum</p>
