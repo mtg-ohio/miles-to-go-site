@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  --color-mtg-near-black: #1B1B1B;
+  --color-mtg-charcoal: #2A2A2A;
+  --color-mtg-navy: #1E2D45;
+  --color-mtg-rust: #B45F36;
+  --color-mtg-soft-white: #F7F7F7;
+  --color-mtg-warm-gray: #A9A9A9;
+
+  /* Semantic mappings for direct compatibility and backward integration */
+  --color-mtg-blue: #1E2D45;
+  --color-mtg-orange: #B45F36;
+  --color-mtg-text: #2A2A2A;
+}
+
+/* Production Reset & Performance Layer */
+:root {
+  --mtg-near-black: #1B1B1B;
+  --mtg-charcoal: #2A2A2A;
+  --mtg-navy: #1E2D45;
+  --mtg-rust: #B45F36;
+  --mtg-soft-white: #F7F7F7;
+  --mtg-warm-gray: #A9A9A9;
+
+  /* Semantic fallbacks */
+  --mtg-blue: #1E2D45;
+  --mtg-orange: #B45F36;
+  --mtg-text: #2A2A2A;
+  --mtg-bg: #F7F7F7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--mtg-soft-white);
+}
+
+/* System Font Stack - Professional & High-Performance */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  color: var(--mtg-charcoal);
+  background-color: var(--mtg-soft-white);
+  line-height: 1.5;
+}
+
+/* Hardware Accelerated Transitions */
+.transition-all, .transition-transform, .transition-colors {
+  will-change: transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* High-Contrast Focus States for Accessibility */
+:focus-visible {
+  outline: 2px solid var(--mtg-rust);
+  outline-offset: 4px;
+}
+
+/* Selection Branding */
+::selection {
+  background: rgba(180, 95, 54, 0.2);
+  color: var(--mtg-rust);
+}
+
+/* Scrollbar Branding */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mtg-near-black);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mtg-rust);
+}
