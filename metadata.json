@@ -1,0 +1,6 @@
+{
+  "name": "Miles to Go | Local Calls Delivered",
+  "description": "Turn your Google Business Profile into a reliable source of new business. MTG Local Calls Delivered provides the structure and strategy local businesses need to dominate search results.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
