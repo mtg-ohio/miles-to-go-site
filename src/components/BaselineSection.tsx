@@ -21,7 +21,7 @@ const BaselineSection: React.FC = () => {
           <MetricTile
             category="Your Google Profile"
             title="Looking Right"
-            description={<>Your <strong>Google Business Profile</strong>: the contact information, hours, categories, photos and recent posts people see before they call. Is it <strong>claimed</strong>, <strong>current</strong>, and <strong>complete</strong>?</>}
+            description={<>Your <strong>Google Business Profile</strong>: the contact information, hours, categories, photos and recent posts people see before they call. Is it <strong>claimed</strong>, <strong>current</strong> and <strong>complete</strong>?</>}
           />
           <MetricTile
             category="Your Reviews"
