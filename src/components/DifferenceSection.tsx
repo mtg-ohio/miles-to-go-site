@@ -15,7 +15,7 @@ const DifferenceSection: React.FC = () => {
           <MiniCard
             icon={<TrophyIcon className="w-5 h-5" />}
             title="Find the Gaps"
-            text="When a competitor shows up before you on Google, we identify what they're leaving open and take it."
+            text="When a competitor shows up above you on Google, we identify what they're leaving open and we take it."
             isHighlighted={true}
           />
           <MiniCard
