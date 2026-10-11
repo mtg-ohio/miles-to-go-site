@@ -58,8 +58,8 @@ const Header: React.FC = () => {
         <div className="text-center md:text-left">
           <p className="text-lg md:text-xl font-semibold tracking-wide">
             MILES TO GO, LLC
-            <span className="text-mtg-warm-gray font-light mx-2">|</span>
-            <span className="hidden sm:inline">Local Customers Delivered</span>
+            <span className="hidden sm:inline text-mtg-warm-gray font-light mx-2">|</span>
+            <span className="block sm:inline text-base sm:text-[length:inherit] font-light sm:font-semibold">Local Customers Delivered</span>
           </p>
           <p className="text-xs text-mtg-soft-white opacity-80 mt-1 uppercase tracking-widest font-medium">
             Get Found. Get Chosen. Get Customers.
