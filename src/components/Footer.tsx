@@ -19,18 +19,18 @@ const Footer: React.FC = () => {
 
           <div className="text-center md:text-right text-mtg-charcoal opacity-70 text-sm space-y-1">
             <a
-              href="mailto:michael@milestogoohio.com"
-              className="flex items-center justify-center md:justify-end hover:text-mtg-rust transition-colors"
-            >
-              <span className="mr-2">michael@milestogoohio.com</span>
-              <EmailIcon className="w-4 h-4" />
-            </a>
-            <a
               href="tel:4402909067"
               className="flex items-center justify-center md:justify-end hover:text-mtg-rust transition-colors"
             >
               <span className="mr-2">440.290.9067</span>
               <PhoneIcon className="w-4 h-4" />
+            </a>
+            <a
+              href="mailto:michael@milestogoohio.com"
+              className="flex items-center justify-center md:justify-end hover:text-mtg-rust transition-colors"
+            >
+              <span className="mr-2">michael@milestogoohio.com</span>
+              <EmailIcon className="w-4 h-4" />
             </a>
           </div>
 
