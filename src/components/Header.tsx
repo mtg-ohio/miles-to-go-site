@@ -56,11 +56,11 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="text-center md:text-left">
-          <h1 className="text-lg md:text-xl font-semibold tracking-wide">
+          <p className="text-lg md:text-xl font-semibold tracking-wide">
             MILES TO GO, LLC
             <span className="text-mtg-warm-gray font-light mx-2">|</span>
             <span className="hidden sm:inline">Local Customers Delivered</span>
-          </h1>
+          </p>
           <p className="text-xs text-mtg-soft-white opacity-80 mt-1 uppercase tracking-widest font-medium">
             Get Found. Get Chosen. Get Customers.
           </p>
