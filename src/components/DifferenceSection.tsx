@@ -31,7 +31,7 @@ const DifferenceSection: React.FC = () => {
           <MiniCard
             icon={<GearsIcon className="w-5 h-5" />}
             title="Show the Proof"
-            text="Fresh reviews and real work are your proof. We make asking for reviews easy, and turn your job photos into posts you approve."
+            text="Real work and fresh reviews are your proof. We turn your job photos into posts you approve, and make asking for reviews easy."
           />
         </div>
 
