@@ -37,7 +37,7 @@ const DifferenceSection: React.FC = () => {
 
         <div className="bg-mtg-blue text-white p-6 sm:p-8 rounded-2xl text-center shadow-lg transform hover:-translate-y-1 transition-transform">
           <p className="text-lg italic leading-relaxed">
-            We do the busywork – you keep the <strong className="text-mtg-rust">final say</strong>. Nothing goes out in your name until you say okay.
+            We do the online work. You keep the <strong className="text-mtg-rust">final say</strong>. Nothing goes out in your name without your approval.
           </p>
         </div>
       </div>
