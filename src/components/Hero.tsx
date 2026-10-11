@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-mtg-charcoal opacity-80 mb-6">
-          We make sure they find you first.
+          Make sure they find you first.
         </p>
 
         <div className="w-16 h-1 bg-mtg-rust mx-auto mb-6"></div>
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
         </p>
 
         <p className="text-base md:text-lg text-mtg-charcoal opacity-80 leading-relaxed mb-10">
-          When someone nearby needs what you sell or do, they search on Google or ask an AI assistant. Now the answer is often one business, not ten. If that one isn&apos;t you, they&apos;ll call or visit a competitor. We make sure it&apos;s you.
+          When someone nearby needs what you sell or do, they search on Google or ask an AI assistant. Now the answer is often one business, not ten. If that one isn&apos;t you, they&apos;ll call or visit a competitor. Let&apos;s make it you.
         </p>
 
         <div className="flex flex-col items-center gap-4">
