@@ -52,7 +52,7 @@ const PricingSection: React.FC = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               {ONE_TIME.map((s) => (
                 <div key={s.name} className={`p-4 rounded-xl ${s.best ? 'bg-mtg-rust/5 border border-mtg-rust' : ''}`}>
-                  <p className="text-[10px] font-black text-mtg-rust uppercase tracking-[0.2em] mb-1">{s.best ? 'Best Value' : 'One-Time'}</p>
+                  <p className="text-[10px] font-black text-mtg-rust uppercase tracking-[0.2em] mb-1">{s.best ? 'Save $100' : 'One-Time'}</p>
                   <h4 className="text-lg font-bold text-mtg-navy">{s.name}</h4>
                   <p className="text-2xl font-black text-mtg-navy my-1">{s.was && <s className="text-lg font-bold text-mtg-warm-gray mr-2">{s.was}</s>}<Price value={s.price} /></p>
                   <p className="text-mtg-charcoal opacity-70 text-sm leading-relaxed">{s.text}</p>
