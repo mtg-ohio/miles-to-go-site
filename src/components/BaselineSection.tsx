@@ -31,7 +31,7 @@ const BaselineSection: React.FC = () => {
           <MetricTile
             category="Your Website"
             title="Closing the Deal"
-            description="Does it load super fast? Does it work on a phone? And do you make it easy for people to contact you?"
+            description="Does it load lightning fast? Does it work on a phone? Can people reach you with just one tap?"
           />
         </div>
 

@@ -3,39 +3,46 @@ import SectionWrapper from './SectionWrapper';
 import { CheckCircleIcon } from './Icon';
 
 const ONE_TIME = [
-  { name: 'Google Profile Tune-Up', price: '$350', text: 'Your listing really yours: right categories and services, real hours, good photos, your booking link.' },
-  { name: 'Website Tune-Up', price: '$350', text: 'The site you have, made fast, phone-friendly and easy for Google to understand.' },
-  { name: 'Both Together', price: '$600', text: 'Your listing and your website the same week, so they tell the same story.', best: true },
-  { name: 'Move Your Website', price: 'from $600', text: 'A cleaner, faster setup that you own.' },
-  { name: 'One-Page Website', price: '$950', text: 'One good page, built to be found. Google listing tune-up included.' },
-  { name: 'Small Website', price: 'from $2,500', text: 'About five pages: home, services, about, reviews, contact.' },
+  { name: 'Google Profile Tune-Up', price: '$350', text: 'Your listing claimed, current and complete: the right categories and services, real hours, good photos and your booking link or contact information.' },
+  { name: 'Website Tune-Up', price: '$350', text: 'The site you already have loads faster, reads well on a phone and makes sense to Google and AI assistants.' },
+  { name: 'Both Tune-Ups', price: '$600', was: '$700', text: 'Your listing and your website done the same week, so customers hear one story.', best: true },
+  { name: 'Move Your Existing Website', price: 'from $600', text: 'Your same site, moved off Wix, Squarespace or GoDaddy to a faster home you own outright.' },
+  { name: 'Your New Landing Page', price: '$950', text: 'One strong page, built to be found, with the Google Profile Tune-Up included.' },
+  { name: 'Your New Website', price: 'from $2,500', text: 'Room for your whole story: home, services, about, reviews and contact.' },
 ];
 
 const MONTHLY = [
   {
     name: 'Watch',
     price: '$79',
-    items: ['We watch your site and listing day and night*', 'Small fixes, handled', 'One page a month: is the phone ringing?'],
+    items: ['Your site and listing, checked day and night', 'Small fixes handled for you, with your permission', 'A one-page monthly report: is the phone ringing?'],
   },
   {
     name: 'Care',
     price: '$249',
     best: true,
-    items: ['Everything in Watch', 'Up to 4 Google posts a month', 'Review replies, you okay each one', 'Hours right through holidays'],
+    items: ['Everything in Watch', 'Up to four fresh Google posts a month', 'Review replies written for you; you okay every one', 'Holiday hours kept right'],
   },
   {
     name: 'Grow',
     price: 'from $549',
-    items: ['Everything in Care', 'A new or better page each month', 'A sit-down every few months', 'Simple AI helpers, in your accounts'],
+    items: ['Everything in Care', 'A new page every month, built around your local season or your next big event', "A sit-down every quarter: How are you looking on Google and to AI? What's next?"],
   },
 ];
+
+const Price = ({ value }: { value: string }) =>
+  value.startsWith('from ') ? (
+    <><span className="text-sm font-bold text-mtg-warm-gray mr-1.5">from</span>{value.slice(5)}</>
+  ) : (
+    <>{value}</>
+  );
 
 const PricingSection: React.FC = () => {
   return (
     <SectionWrapper title="What It Costs" className="bg-white">
       <div className="max-w-4xl mx-auto space-y-10">
-        <p className="text-base md:text-lg text-mtg-charcoal opacity-85 leading-relaxed text-center max-w-2xl mx-auto">
-          <span className="inline-flex flex-wrap justify-center gap-4 md:gap-6"><span className="bg-mtg-blue px-4 py-1.5 rounded text-xs font-black uppercase tracking-widest text-white whitespace-nowrap shadow-lg">Fix it once</span><span className="bg-mtg-rust px-4 py-1.5 rounded text-xs font-black uppercase tracking-widest text-white whitespace-nowrap shadow-lg">Keep it working</span></span>
+        <p className="text-base md:text-lg text-center max-w-2xl mx-auto">
+          <span className="inline-flex flex-wrap justify-center items-center gap-3 md:gap-4"><span className="bg-mtg-blue px-4 py-1.5 rounded text-xs font-black uppercase tracking-widest text-white whitespace-nowrap shadow-lg">Fix it once</span><span className="self-center text-mtg-warm-gray text-xl font-light leading-none" aria-hidden="true">+</span><span className="bg-mtg-rust px-4 py-1.5 rounded text-xs font-black uppercase tracking-widest text-white whitespace-nowrap shadow-lg">Keep it working</span></span>
         </p>
 
         {/* STAGE 1: FIX IT ONCE */}
@@ -47,7 +54,7 @@ const PricingSection: React.FC = () => {
                 <div key={s.name} className={`p-4 rounded-xl ${s.best ? 'bg-mtg-rust/5 border border-mtg-rust' : ''}`}>
                   <p className="text-[10px] font-black text-mtg-rust uppercase tracking-[0.2em] mb-1">{s.best ? 'Best Value' : 'One-Time'}</p>
                   <h4 className="text-lg font-bold text-mtg-navy">{s.name}</h4>
-                  <p className="text-2xl font-black text-mtg-navy my-1">{s.price}</p>
+                  <p className="text-2xl font-black text-mtg-navy my-1">{s.was && <s className="text-lg font-bold text-mtg-warm-gray mr-2">{s.was}</s>}<Price value={s.price} /></p>
                   <p className="text-mtg-charcoal opacity-70 text-sm leading-relaxed">{s.text}</p>
                 </div>
               ))}
@@ -75,7 +82,7 @@ const PricingSection: React.FC = () => {
                     <p className="text-[10px] font-black text-mtg-rust uppercase tracking-[0.25em]">{p.best ? 'Best Value' : 'Monthly'}</p>
                     <h3 className="text-2xl font-black text-mtg-navy">{p.name}</h3>
                     <p className="text-3xl font-black text-mtg-navy tracking-tighter my-2">
-                      {p.price}<span className="text-sm font-bold text-mtg-warm-gray">/mo</span>
+                      <Price value={p.price} /><span className="text-sm font-bold text-mtg-warm-gray">/mo</span>
                     </p>
                     <ul className="space-y-2">
                       {p.items.map((i) => (
@@ -92,16 +99,13 @@ const PricingSection: React.FC = () => {
                 <p className="text-[10px] text-mtg-warm-gray font-black uppercase tracking-[0.15em]">
                   Billed monthly. No contract. Cancel anytime.
                 </p>
-                <p className="text-xs text-mtg-charcoal opacity-60">
-                  *Google listings join once Google approves us. Until then, we check them by hand.
-                </p>
               </div>
             </div>
           </div>
         </div>
 
         <p className="text-sm text-mtg-charcoal opacity-75 text-center max-w-2xl mx-auto">
-          It&apos;s all yours: your domain, your accounts, your logins. If you leave, everything stays with you.
+          Everything we set up is yours: your domain, your accounts, your logins. If we part ways, it all stays with you.
         </p>
       </div>
     </SectionWrapper>
