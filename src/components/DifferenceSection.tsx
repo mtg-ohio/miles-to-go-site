@@ -4,7 +4,7 @@ import { TrophyIcon, UserIcon, DiamondIcon, GearsIcon } from './Icon';
 
 const DifferenceSection: React.FC = () => {
   return (
-    <SectionWrapper title="Why They'll Pick You." id="compatibility" className="bg-mtg-soft-white">
+    <SectionWrapper title="Why They'll Choose You" id="compatibility" className="bg-mtg-soft-white">
       <div className="max-w-4xl mx-auto space-y-8">
         <p className="text-base md:text-lg text-mtg-charcoal opacity-85 leading-relaxed text-center max-w-2xl mx-auto">
           Showing up is only half of it. We set things up around the jobs or sales you actually want, so the right
@@ -15,30 +15,29 @@ const DifferenceSection: React.FC = () => {
           <MiniCard
             icon={<TrophyIcon className="w-5 h-5" />}
             title="Find the Gaps"
-            text="We size up the competitors people would pick instead, and go after what they're leaving open."
+            text="When a competitor shows up before you on Google, we identify what they're leaving open and take it."
             isHighlighted={true}
           />
           <MiniCard
             icon={<UserIcon className="w-5 h-5" />}
-            title="The Right Business, Not Just More"
-            text="We don't chase every tiny lead. We go after the jobs or sales that pay you best."
+            title="Win the Right Work"
+            text="Not every lead is worth chasing. We focus on the work you want most."
           />
           <MiniCard
             icon={<DiamondIcon className="w-5 h-5" />}
             title="Stand Out"
-            text="We make it obvious why someone should choose you instead of the other guy."
+            text="We'll work together to make it obvious why someone should choose you over the other guy."
           />
           <MiniCard
             icon={<GearsIcon className="w-5 h-5" />}
-            title="Proof That Sells"
-            text="Real photos of your work and a steady stream of fresh reviews beat stock images every time."
+            title="Show the Proof"
+            text="You feed us photos of your work, and we'll keep fresh reviews coming in. Real photos beat stock images every time."
           />
         </div>
 
         <div className="bg-mtg-blue text-white p-6 sm:p-8 rounded-2xl text-center shadow-lg transform hover:-translate-y-1 transition-transform">
           <p className="text-lg italic leading-relaxed">
-            You stay in charge. Anything that <strong className="text-mtg-rust">speaks for you</strong>, like a post or
-            a review reply, goes up only after you okay it.
+            We do the busywork – you keep the <strong className="text-mtg-rust">final say</strong>. Nothing goes out in your name until you say okay.
           </p>
         </div>
       </div>
@@ -47,7 +46,7 @@ const DifferenceSection: React.FC = () => {
 };
 
 const MiniCard: React.FC<{ icon: React.ReactNode; title: string; text: string; isHighlighted?: boolean }> = ({ icon, title, text, isHighlighted = false }) => (
-  <div className={`flex items-start gap-4 p-5 rounded-xl border transition-all ${isHighlighted ? 'bg-mtg-rust/5 border-mtg-rust shadow-md scale-105 relative z-10' : 'bg-white border-mtg-warm-gray/10 shadow-sm hover:border-mtg-blue/20'}`}>
+  <div className={`flex items-start gap-4 p-5 rounded-xl border transition-all ${isHighlighted ? 'bg-mtg-rust/5 border-mtg-rust shadow-md relative z-10' : 'bg-white border-mtg-warm-gray/10 shadow-sm hover:border-mtg-blue/20'}`}>
     <div className={`p-2.5 rounded-lg flex-shrink-0 ${isHighlighted ? 'bg-mtg-rust text-white shadow-lg' : 'bg-mtg-blue/10 text-mtg-blue'}`}>
       {icon}
     </div>

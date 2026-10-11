@@ -32,10 +32,10 @@ const MONTHLY = [
 
 const PricingSection: React.FC = () => {
   return (
-    <SectionWrapper title="What It Costs." className="bg-white">
+    <SectionWrapper title="What It Costs" className="bg-white">
       <div className="max-w-4xl mx-auto space-y-10">
         <p className="text-base md:text-lg text-mtg-charcoal opacity-85 leading-relaxed text-center max-w-2xl mx-auto">
-          Fix it <strong>once</strong>, then keep it <strong>working</strong>. You&apos;ll know the price before we start.
+          <span className="inline-flex flex-wrap justify-center gap-4 md:gap-6"><span className="bg-mtg-blue px-4 py-1.5 rounded text-xs font-black uppercase tracking-widest text-white whitespace-nowrap shadow-lg">Fix it once</span><span className="bg-mtg-rust px-4 py-1.5 rounded text-xs font-black uppercase tracking-widest text-white whitespace-nowrap shadow-lg">Keep it working</span></span>
         </p>
 
         {/* STAGE 1: FIX IT ONCE */}

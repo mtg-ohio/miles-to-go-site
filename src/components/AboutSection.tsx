@@ -3,7 +3,7 @@ import SectionWrapper from './SectionWrapper';
 
 const AboutSection: React.FC = () => {
   return (
-    <SectionWrapper title="Who You're Working With." className="bg-mtg-soft-white">
+    <SectionWrapper title="Who You're Working With" className="bg-mtg-soft-white">
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 text-left">
         <div className="bg-white p-6 rounded-xl border border-mtg-warm-gray/20 shadow-sm">
           <p className="text-[10px] font-black uppercase text-mtg-rust tracking-widest">Owner</p>

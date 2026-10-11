@@ -5,43 +5,43 @@ import SectionWrapper from './SectionWrapper';
 // "Where You Stand Today", said once.
 const BaselineSection: React.FC = () => {
   return (
-    <SectionWrapper title="Where You Stand Today." className="bg-white">
+    <SectionWrapper title="Where You Stand Today" className="bg-white">
       <div className="max-w-4xl mx-auto space-y-8">
         <p className="text-base md:text-lg text-mtg-charcoal opacity-85 leading-relaxed text-center max-w-2xl mx-auto">
-          It starts with a free checkup. We look at your business from the outside, the way a customer would.
+          It starts with our <span className="text-mtg-rust font-bold">Free Checkup</span>. We look at your business from the outside, the way a customer would.
           We don&apos;t log in to anything.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 text-left">
           <MetricTile
-            category="Getting Found"
-            title="How Often You Show Up"
-            description="Where you land when people search for what you do, next to the competitors they'd pick instead."
+            category="Your Search Results"
+            title="Showing Up"
+            description="When people search Google or ask an AI for what you do, where do you land next to the competitors they'd pick instead?"
           />
           <MetricTile
-            category="Your Google Listing"
-            title="What People See First"
-            description="Your hours, categories, photos and phone number. Is it all right, and is it all yours?"
+            category="Your Google Profile"
+            title="Looking Right"
+            description={<>Your <strong>Google Business Profile</strong>: the contact information, hours, categories, photos and recent posts people see before they call. Is it <strong>claimed</strong>, <strong>current</strong>, and <strong>complete</strong>?</>}
           />
           <MetricTile
-            category="Reviews"
-            title="Your Review Picture"
-            description="Your rating, how many you have, how fresh they are, and whether anyone's answering them."
+            category="Your Reviews"
+            title="Earning Trust"
+            description="How many stars do you average, how many reviews do you have, how fresh are they, and are you answering them?"
           />
           <MetricTile
             category="Your Website"
-            title="Does It Close the Deal?"
-            description="Does it load fast, work on a phone, and make it easy to call you?"
+            title="Closing the Deal"
+            description="Does it load super fast? Does it work on a phone? And do you make it easy for people to contact you?"
           />
         </div>
 
         <div className="pt-4 border-t border-mtg-warm-gray/10">
           <p className="text-mtg-navy font-medium text-center text-xl sm:text-2xl">
-            You get <span className="text-mtg-rust font-bold tracking-wide">one page</span>: what&apos;s working, what to
-            fix, and about how long each fix takes.
+            Your <span className="text-mtg-rust font-bold tracking-wide">Free Checkup</span> is one page: what&apos;s working, what to
+            fix, and about how long each fix would take.
           </p>
           <p className="text-mtg-charcoal opacity-70 text-center text-sm mt-3">
-            Within two business days. It&apos;s yours to keep, whether you hire us or not.
+            You&apos;ll have it within two business days, and it&apos;s yours to use whether you hire us or not.
           </p>
         </div>
       </div>
@@ -49,7 +49,7 @@ const BaselineSection: React.FC = () => {
   );
 };
 
-const MetricTile: React.FC<{ category: string; title: string; description: string }> = ({ category, title, description }) => (
+const MetricTile: React.FC<{ category: string; title: string; description: React.ReactNode }> = ({ category, title, description }) => (
   <div className="bg-white p-6 rounded-lg border-l-4 border-mtg-rust shadow-sm hover:shadow-md transition-shadow">
     <span className="text-[10px] font-black uppercase text-mtg-warm-gray tracking-tighter">{category}</span>
     <h3 className="text-xl font-bold text-mtg-navy mt-1 mb-2">{title}</h3>
