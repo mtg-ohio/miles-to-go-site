@@ -5,7 +5,7 @@ import { CheckCircleIcon } from './Icon';
 const ONE_TIME = [
   { name: 'Google Profile Tune-Up', price: '$350', text: 'Your listing claimed, current and complete: the right categories and services, real hours, good photos and your booking link or contact information.' },
   { name: 'Website Tune-Up', price: '$350', text: 'The site you already have loads faster, reads well on a phone and makes sense to Google and AI assistants.' },
-  { name: 'Both Tune-Ups', price: '$600', was: '$700', text: 'Your listing and your website done the same week, so customers hear one story.', best: true },
+  { name: 'Both Tune-Ups', price: '$600', was: '$700', text: 'Your listing and your website done together, so customers hear one story.', best: true },
   { name: 'Move Your Existing Website', price: 'from $600', text: 'Your same site, moved off Wix, Squarespace or GoDaddy to a faster home you own outright.' },
   { name: 'Your New Landing Page', price: '$950', text: 'One strong page, built to be found, with the Google Profile Tune-Up included.' },
   { name: 'Your New Website', price: 'from $2,500', text: 'Room for your whole story: home, services, about, reviews and contact.' },
