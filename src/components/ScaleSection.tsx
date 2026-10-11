@@ -89,7 +89,7 @@ const ScaleSection: React.FC = () => {
                 Don&apos;t want to wait two days?{' '}
                 <a href="tel:4402909067" className="text-mtg-rust underline underline-offset-4">Call</a> or{' '}
                 <a href="sms:4402909067" className="text-mtg-rust underline underline-offset-4">text</a>{' '}
-                <a href="tel:4402909067" className="whitespace-nowrap hover:underline">440-290-9067</a>
+                <a href="tel:4402909067" className="whitespace-nowrap hover:underline">440.290.9067</a>
               </p>
             </div>
           </div>
