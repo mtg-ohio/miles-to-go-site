@@ -1,5 +1,4 @@
 import React from 'react';
-import { PhoneIcon, MessageIcon, EmailIcon } from './Icon';
 
 const field =
   'w-full px-4 py-2.5 border border-white/20 rounded bg-white/95 text-sm text-mtg-near-black focus:outline-none focus:ring-2 focus:ring-mtg-rust/40';
@@ -7,6 +6,20 @@ const label = 'block text-[10px] font-black uppercase tracking-widest text-white
 
 // The closing ask, with the free checkup form. A plain HTML form so it works
 // without JavaScript (Netlify Forms reads it from the built page).
+// Phone and email are both optional, but one of them has to be there.
+const needOneContact = (e: React.FormEvent<HTMLFormElement>) => {
+  const form = e.currentTarget;
+  const phone = form.elements.namedItem('phone') as HTMLInputElement;
+  const email = form.elements.namedItem('email') as HTMLInputElement;
+  phone.setCustomValidity('');
+  if (!phone.value.trim() && !email.value.trim()) {
+    e.preventDefault();
+    phone.setCustomValidity('Add a phone or an email so we can send your checkup.');
+    phone.reportValidity();
+    phone.addEventListener('input', () => phone.setCustomValidity(''), { once: true });
+  }
+};
+
 const ScaleSection: React.FC = () => {
   return (
     <section id="checkup" className="py-16 sm:py-20 px-4 bg-mtg-navy relative overflow-hidden">
@@ -24,10 +37,10 @@ const ScaleSection: React.FC = () => {
         <div className="bg-white/[0.03] border border-white/10 p-1 md:p-1.5 rounded-3xl backdrop-blur-md max-w-2xl mx-auto shadow-2xl overflow-hidden ring-1 ring-white/10">
           <div className="bg-mtg-navy/40 p-6 sm:p-10 rounded-[22px] border border-white/5">
             <p className="text-mtg-soft-white opacity-85 mb-8 text-base md:text-lg leading-relaxed font-medium">
-              Get your free checkup. It takes about a minute, and Michael will have it to you within two business days.
+              It takes about a minute to ask, and you&apos;ll have it within two business days.
             </p>
 
-            <form name="checkup" method="POST" data-netlify="true" data-netlify-honeypot="company-url" className="space-y-4 text-left">
+            <form name="checkup" method="POST" onSubmit={needOneContact} data-netlify="true" data-netlify-honeypot="company-url" className="space-y-4 text-left">
               <input type="hidden" name="form-name" value="checkup" />
               <p className="hidden">
                 <label>Leave this empty: <input name="company-url" /></label>
@@ -43,15 +56,21 @@ const ScaleSection: React.FC = () => {
                 </div>
               </div>
               <div>
-                <label className={label} htmlFor="website">Website (if you have one)</label>
+                <label className={label} htmlFor="website">Website, if you have one</label>
                 <input className={field} id="website" name="website" />
               </div>
-              <div>
-                <label className={label} htmlFor="contact">Best way to reach you (phone or email)</label>
-                <input className={field} id="contact" name="contact" required />
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label className={label} htmlFor="phone">Phone</label>
+                  <input className={field} id="phone" name="phone" type="tel" autoComplete="tel" />
+                </div>
+                <div>
+                  <label className={label} htmlFor="email">Email</label>
+                  <input className={field} id="email" name="email" type="email" autoComplete="email" />
+                </div>
               </div>
               <div>
-                <label className={label} htmlFor="bugging">What&apos;s bugging you? (optional)</label>
+                <label className={label} htmlFor="bugging">Tell us what&apos;s not working. Be blunt. (optional)</label>
                 <textarea className={field} id="bugging" name="bugging" rows={3}></textarea>
               </div>
               <button
@@ -61,27 +80,17 @@ const ScaleSection: React.FC = () => {
                 Get Your Free Checkup
               </button>
               <p className="text-xs text-white/50 text-center">
-                We use this to send your checkup and check in once after. No mailing list.
+                We only use this to send your checkup and check in once afterward. We never sell or share it.
               </p>
             </form>
 
-            <div className="space-y-6 mt-10">
-              <div className="w-16 h-1 bg-white/20 mx-auto"></div>
-              <h4 className="text-white/70 font-black text-xs uppercase tracking-[0.4em]">Rather Talk?</h4>
-              <div className="flex flex-col sm:flex-row justify-center items-stretch gap-4">
-                <a href="tel:4402909067" className="flex items-center justify-center gap-3 px-8 py-4 bg-mtg-rust text-white rounded-lg font-black uppercase tracking-[0.15em] hover:opacity-90 transition-all transform hover:scale-[1.03] shadow-xl group">
-                  <PhoneIcon className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-                  Call
-                </a>
-                <a href="sms:4402909067" className="flex items-center justify-center gap-3 px-8 py-4 bg-white text-mtg-navy rounded-lg font-black uppercase tracking-[0.15em] hover:bg-mtg-soft-white transition-all transform hover:scale-[1.03] shadow-xl group">
-                  <MessageIcon className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
-                  Text
-                </a>
-                <a href="mailto:michael@milestogoohio.com" className="flex items-center justify-center gap-3 px-8 py-4 bg-transparent border-2 border-white/20 text-white rounded-lg font-black uppercase tracking-[0.15em] hover:bg-white/10 transition-all transform hover:scale-[1.03] shadow-xl group">
-                  <EmailIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  Email
-                </a>
-              </div>
+            <div className="mt-10 pt-8 border-t border-white/10">
+              <p className="text-white text-lg md:text-xl font-bold">
+                Don&apos;t want to wait two days?{' '}
+                <a href="tel:4402909067" className="text-mtg-rust underline underline-offset-4">Call</a> or{' '}
+                <a href="sms:4402909067" className="text-mtg-rust underline underline-offset-4">text</a>{' '}
+                <a href="tel:4402909067" className="whitespace-nowrap hover:underline">440-290-9067</a>
+              </p>
             </div>
           </div>
         </div>
