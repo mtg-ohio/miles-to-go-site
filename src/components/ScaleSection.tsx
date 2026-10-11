@@ -37,7 +37,7 @@ const ScaleSection: React.FC = () => {
         <div className="bg-white/[0.03] border border-white/10 p-1 md:p-1.5 rounded-3xl backdrop-blur-md max-w-2xl mx-auto shadow-2xl overflow-hidden ring-1 ring-white/10">
           <div className="bg-mtg-navy/40 p-6 sm:p-10 rounded-[22px] border border-white/5">
             <p className="text-mtg-soft-white opacity-85 mb-8 text-base md:text-lg leading-relaxed font-medium">
-              It takes about a minute to ask, and you&apos;ll have it within two business days.
+              It takes about a minute to ask. Ava runs the checks, and Michael delivers your checkup within two business days.
             </p>
 
             <form name="checkup" method="POST" onSubmit={needOneContact} data-netlify="true" data-netlify-honeypot="company-url" className="space-y-4 text-left">
