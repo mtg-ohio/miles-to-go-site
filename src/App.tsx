@@ -1,36 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import ProblemSection from './components/ProblemSection';
 import BaselineSection from './components/BaselineSection';
 import DifferenceSection from './components/DifferenceSection';
-import RoadmapSection from './components/RoadmapSection';
-import BattlefieldSection from './components/BattlefieldSection';
 import PricingSection from './components/PricingSection';
+import AboutSection from './components/AboutSection';
 import ScaleSection from './components/ScaleSection';
 import Footer from './components/Footer';
-import { ScanModal } from './components/ScanModal';
-import { LeadsDashboard } from './components/LeadsDashboard';
 
 const App: React.FC = () => {
-  const [isScanOpen, setIsScanOpen] = useState(false);
-
   return (
     <div className="bg-mtg-soft-white font-sans text-mtg-text">
       <Header />
       <main>
-        <Hero onOpenScan={() => setIsScanOpen(true)} />
-        <ProblemSection />
+        <Hero />
         <BaselineSection />
         <DifferenceSection />
-        <RoadmapSection />
-        <BattlefieldSection />
         <PricingSection />
+        <AboutSection />
         <ScaleSection />
       </main>
-      <LeadsDashboard />
       <Footer />
-      <ScanModal isOpen={isScanOpen} onClose={() => setIsScanOpen(false)} />
     </div>
   );
 };

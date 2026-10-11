@@ -4,40 +4,42 @@ import { TrophyIcon, UserIcon, DiamondIcon, GearsIcon } from './Icon';
 
 const DifferenceSection: React.FC = () => {
   return (
-    <SectionWrapper title="Why They'll Pick You." id="compatibility" className="bg-white">
+    <SectionWrapper title="Why They'll Pick You." id="compatibility" className="bg-mtg-soft-white">
       <div className="max-w-4xl mx-auto space-y-8">
         <p className="text-base md:text-lg text-mtg-charcoal opacity-85 leading-relaxed text-center max-w-2xl mx-auto">
-          Showing up is only half of it. We set up your profile around the jobs or sales you actually want - so the right customers pick you.
+          Showing up is only half of it. We set things up around the jobs or sales you actually want, so the right
+          customers pick you.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6">
-          <MiniCard 
+          <MiniCard
             icon={<TrophyIcon className="w-5 h-5" />}
-            title="The 90-Day Goal"
-            text="The aim: 30% more phone calls or store visits in your first 90 days."
+            title="Find the Gaps"
+            text="We size up the competitors people would pick instead, and go after what they're leaving open."
             isHighlighted={true}
           />
-          <MiniCard 
+          <MiniCard
             icon={<UserIcon className="w-5 h-5" />}
             title="The Right Business, Not Just More"
             text="We don't chase every tiny lead. We go after the jobs or sales that pay you best."
           />
-          <MiniCard 
+          <MiniCard
             icon={<DiamondIcon className="w-5 h-5" />}
             title="Stand Out"
             text="We make it obvious why someone should choose you instead of the other guy."
           />
-          <MiniCard 
+          <MiniCard
             icon={<GearsIcon className="w-5 h-5" />}
             title="Proof That Sells"
-            text="A simple habit of project or shop photos and a steady stream of fresh reviews."
+            text="Real photos of your work and a steady stream of fresh reviews beat stock images every time."
           />
         </div>
 
         <div className="bg-mtg-blue text-white p-6 sm:p-8 rounded-2xl text-center shadow-lg transform hover:-translate-y-1 transition-transform">
-            <p className="text-lg italic leading-relaxed">
-                A clear, simple reason for people to <strong className="text-mtg-rust">choose you</strong> - ready to put to work.
-            </p>
+          <p className="text-lg italic leading-relaxed">
+            You stay in charge. Anything that <strong className="text-mtg-rust">speaks for you</strong>, like a post or
+            a review reply, goes up only after you okay it.
+          </p>
         </div>
       </div>
     </SectionWrapper>

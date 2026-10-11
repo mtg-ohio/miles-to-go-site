@@ -1,41 +1,48 @@
 import React from 'react';
 import SectionWrapper from './SectionWrapper';
 
+// The free checkup: what used to be "Stop Losing Local Leads" and
+// "Where You Stand Today", said once.
 const BaselineSection: React.FC = () => {
   return (
-    <SectionWrapper title="Where You Stand Today." className="bg-mtg-soft-white">
+    <SectionWrapper title="Where You Stand Today." className="bg-white">
       <div className="max-w-4xl mx-auto space-y-8">
         <p className="text-base md:text-lg text-mtg-charcoal opacity-85 leading-relaxed text-center max-w-2xl mx-auto">
-          We start with an honest look at where you stand today. No guessing.
+          It starts with a free checkup. We look at your business from the outside, the way a customer would.
+          We don&apos;t log in to anything.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 text-left">
-          <MetricTile 
+          <MetricTile
             category="Getting Found"
             title="How Often You Show Up"
-            description="How often you appear versus the top 3 competitors near you."
+            description="Where you land when people search for what you do, next to the competitors they'd pick instead."
           />
-          <MetricTile 
-            category="Views"
-            title="Times You Get Seen"
-            description="Total times people saw you on Search and Maps."
+          <MetricTile
+            category="Your Google Listing"
+            title="What People See First"
+            description="Your hours, categories, photos and phone number. Is it all right, and is it all yours?"
           />
-          <MetricTile 
+          <MetricTile
             category="Reviews"
             title="Your Review Picture"
-            description="Your rating, how many you have, and how fresh they are."
+            description="Your rating, how many you have, how fresh they are, and whether anyone's answering them."
           />
-          <MetricTile 
-            category="Calls & Actions"
-            title="What People Actually Do"
-            description="Phone calls, store directions, and website clicks people make."
+          <MetricTile
+            category="Your Website"
+            title="Does It Close the Deal?"
+            description="Does it load fast, work on a phone, and make it easy to call you?"
           />
         </div>
 
         <div className="pt-4 border-t border-mtg-warm-gray/10">
-           <p className="text-mtg-navy font-medium text-center text-xl sm:text-2xl">
-             We take you from <span className="text-mtg-rust font-bold tracking-wide">guessing</span> to <span className="text-mtg-navy font-bold tracking-wide">knowing what brings the calls and customers</span>.
-           </p>
+          <p className="text-mtg-navy font-medium text-center text-xl sm:text-2xl">
+            You get <span className="text-mtg-rust font-bold tracking-wide">one page</span>: what&apos;s working, what to
+            fix, and about how long each fix takes.
+          </p>
+          <p className="text-mtg-charcoal opacity-70 text-center text-sm mt-3">
+            Within two business days. It&apos;s yours to keep, whether you hire us or not.
+          </p>
         </div>
       </div>
     </SectionWrapper>
