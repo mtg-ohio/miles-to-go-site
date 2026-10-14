@@ -1,6 +1,14 @@
-<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="16" cy="16" r="16" fill="#2c3e50" />
-  <path d="M16 6 C 21 6 21 15 16 15 C 11 15 11 6 16 6 Z" fill="#d35400"/>
-  <circle cx="16" cy="9" r="2" fill="white" />
-  <circle cx="16" cy="15" r="4" fill="#d35400" stroke="white" stroke-width="1" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.25 0.62 92 92">
+  <!-- Browser-tab icon: the small icon, switching to the light fence when the browser is in dark mode. -->
+  <style>.i{fill:#1e2d45}.d{fill:#d2662c}@media (prefers-color-scheme:dark){.i{fill:#e8edf4}.d{fill:#ec8248}}</style>
+  <g class="i">
+    <polygon points="3,16.4 79,32.34 79,33.94 3,23.6"/>
+    <polygon points="3,43.4 79,34 79,35.6 3,50.6"/>
+    <polygon points="3,70.4 79,35.67 79,37.27 3,77.6"/>
+    <rect x="5.94" y="11.77" width="10.11" height="69.69" rx="1.82"/>
+    <rect x="38.67" y="20.57" width="6.67" height="41.37" rx="1.2"/>
+    <rect x="58.72" y="25.97" width="4.56" height="24.01" rx="0.82"/>
+    <rect x="71.39" y="29.38" width="3.22" height="13.05" rx="0.58"/>
+  </g>
+  <circle class="d" cx="88" cy="28.5" r="5.5"/>
 </svg>
