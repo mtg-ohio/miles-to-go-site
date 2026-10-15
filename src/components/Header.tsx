@@ -72,11 +72,14 @@ const Header: React.FC = () => {
       ].join(' ')}
     >
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 md:gap-4">
-          <HorizonMark className="w-[53px] h-10 md:w-16 md:h-12 shrink-0" />
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+          <HorizonMark className="hidden sm:block w-16 h-12 shrink-0" />
           <div className="text-center sm:text-left">
           <p className="text-lg md:text-xl font-semibold tracking-wide">
-            MILES TO GO
+            <span className="inline-flex items-center gap-2 align-middle">
+              <HorizonMark className="sm:hidden w-8 h-6 shrink-0" />
+              MILES TO GO
+            </span>
             <span className="hidden sm:inline text-mtg-warm-gray font-light mx-2">|</span>
             <span className="block sm:inline text-base sm:text-[length:inherit] font-light sm:font-semibold">Local Customers Delivered</span>
           </p>
