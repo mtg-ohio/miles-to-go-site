@@ -35,6 +35,9 @@ const Footer: React.FC = () => {
           </div>
 
         </div>
+        <p className="mt-6 text-center text-xs text-mtg-charcoal opacity-50">
+          <a href="/privacy" className="hover:text-mtg-rust hover:underline transition-colors">Privacy</a>
+        </p>
       </div>
     </footer>
   );
