@@ -31,13 +31,13 @@ const PrivacyPage: React.FC = () => {
           <h2 className="text-xl font-bold text-mtg-near-black pt-4">What we do with it</h2>
           <p>
             We use it to run your checkup, send it to you, and check in once afterward. Michael runs the
-            checkup with Ava, an AI assistant that does the legwork. We don't sell your information, and
+            checkup with Ava, an AI assistant built on Anthropic's Claude that does the legwork, so what you type may pass through Anthropic's service. We don't sell your information, and
             we don't use it for anything else.
           </p>
 
           <h2 className="text-xl font-bold text-mtg-near-black pt-4">Who else handles it</h2>
           <p>
-            The form is handled by Netlify, the service that runs this site's form. Your answers pass
+            The site runs on Netlify, with Cloudflare in front of it, and Netlify handles the form. Your answers pass
             through them and are stored there until we delete them. We don't put ads on this site or
             share your details with advertisers.
           </p>
