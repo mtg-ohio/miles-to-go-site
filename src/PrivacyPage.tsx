@@ -38,26 +38,27 @@ const PrivacyPage: React.FC = () => {
           <h2 className="text-xl font-bold text-mtg-near-black pt-4">Who else handles it</h2>
           <p>
             The site runs on Netlify, with Cloudflare in front of it, and Netlify handles the form. Your answers pass
-            through them and are stored there until we delete them. We don't put ads on this site or
+            through them and stay in Netlify until Michael deletes them. A copy also comes to our
+            business email. We don't put ads on this site or
             share your details with advertisers.
           </p>
 
           <h2 className="text-xl font-bold text-mtg-near-black pt-4">Tracking</h2>
           <p>
-            This site doesn't use cookies of its own, analytics, ad trackers or embedded videos or maps.
-            Like any website, the company that hosts it can see basic things such as your IP address
-            when a page loads.
+            We don't run analytics or ad trackers, and there are no embedded videos or maps. Our hosting
+            companies, Netlify and Cloudflare, may set their own cookies, and they can see basic
+            things such as your IP address when a page loads.
           </p>
 
           <h2 className="text-xl font-bold text-mtg-near-black pt-4">Your say</h2>
           <p>
-            Want to see what we have about you, or want it gone? Email{' '}
+            Want to see what we have about you, or want it deleted? Email{' '}
             <a href="mailto:michael@milestogoohio.com" className="text-mtg-rust underline underline-offset-4">
               michael@milestogoohio.com
             </a>{' '}
             or call{' '}
             <a href="tel:4402909067" className="text-mtg-rust underline underline-offset-4">440.290.9067</a>
-            , and we'll take care of it.
+            , and we'll delete what we hold and tell you when it's done.
           </p>
 
           <h2 className="text-xl font-bold text-mtg-near-black pt-4">Changes</h2>

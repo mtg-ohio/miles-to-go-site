@@ -15,6 +15,8 @@ let privacy = fill(render('/privacy'))
   .replace(/<title>.*?<\/title>/, '<title>Privacy | Miles To Go</title>')
   .replace(/<meta name="description" content=".*?" \/>/, '<meta name="description" content="What Miles To Go does with the information you give us. Short and plain." />')
   .replace('<link rel="canonical" href="https://milestogoohio.com/" />', '<link rel="canonical" href="https://milestogoohio.com/privacy" />')
+  .replace(/(<meta (?:property|name)="(?:og:title|twitter:title)" content=").*?"/g, '$1Privacy | Miles To Go"')
+  .replace(/(<meta property="og:url" content=").*?"/, '$1https://milestogoohio.com/privacy"')
   .replace(/\s*<script type="application\/ld\+json">[\s\S]*?<\/script>/, '');
 fs.mkdirSync('dist/privacy', {recursive: true});
 fs.writeFileSync('dist/privacy/index.html', privacy);

@@ -80,7 +80,7 @@ const ScaleSection: React.FC = () => {
                 Get Your Free Checkup
               </button>
               <p className="text-xs text-white/50 text-center">
-                We only use this to send your checkup and check in once afterward. We never sell or share it.
+                We only use this to send your checkup and check in once afterward. We never sell it. <a href="/privacy" className="underline underline-offset-2">Our privacy page</a> has the details.
               </p>
             </form>
 
